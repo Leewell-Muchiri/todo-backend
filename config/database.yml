@@ -1,0 +1,11 @@
+default: &default
+  adapter: sqlite3
+  timer: 5000
+
+development:
+  <<: *default 
+  database: db/todos-dev.sqlite3
+
+production:
+  <<: *default
+  table: todos-prod.sqlite3

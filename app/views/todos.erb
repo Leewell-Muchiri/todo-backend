@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Hello ERB</title>
+        </head>
+        <body>
+            <p>Welcome to your list</p>
+
+            <ol type>
+                <% @todos.each do |todo| %>
+                    <li> <%= todo.title %> <%= todo.description%> </li>
+                <% end %>
+            </ol>
+
+           
+        </body>
+    </html>
+
+</html>
